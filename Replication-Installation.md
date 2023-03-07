@@ -46,7 +46,7 @@ rs.add("192.168.1.236:27018")
 rs.add("192.168.1.165:27019")
 rs.status()
 ```
-## `NOTE: REMOVE NODE FROM CLUSTET - rs.remove("192.168.1.236:27018")`
+## `NOTE: REMOVE NODE FROM CLUSTER - rs.remove("192.168.1.236:27018")`
 
 # STEP:4 - Login To Secondary Node
 
