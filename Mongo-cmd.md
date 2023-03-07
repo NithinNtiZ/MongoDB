@@ -28,3 +28,8 @@ show users
 use
 db
 ```
+# MongoDB compass connection string
+
+```bash
+mongodb://192.168.1.1:27017,192.168.1.2:27018,192.168.1.3:27019?replicaSet=myReplicaset
+```
