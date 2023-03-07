@@ -1,4 +1,4 @@
-`# Create user with role`
+# Create user with role
 ```bash
 db.createUser( { user: "nithin", pwd:  "1234", roles: [ role: "readWrite","dbAdmin","dbAdminAnyDatabase","clusterAdmin", db: "test"]});
 
