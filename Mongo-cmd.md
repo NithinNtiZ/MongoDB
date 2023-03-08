@@ -43,56 +43,56 @@ mongodb://192.168.1.1:27017,192.168.1.2:27018,192.168.1.3:27019?replicaSet=myRep
 ```
 
 
-# create collection 
+# Create Collection 
 ```bash
 db.createCollection{"movies"}
 db.movies.insert({"a":"b", "cast": ["a","b",""c]}) 
 ``` 
-# add new to collection 
+# Add New To Collection 
 ```bash
 db.movies.update({"a":"b"}.{$set:{"r":"l"}})
 ```
-# remove from collection
+# Remove From Collection
 ```bash
 db.movies.update({"a":"b"}.{$unset:{"r":""}}) 	
 ```
-# condition queries 
+# Condition Queries 
 ```bash
 db.movies.find({"value": {$gt,$lt: 2000}}).pretty()
 ```
-# This will not show vlaue field
+# This will Not Show Value Field
 ```bash
 db.moves.find({}, {"value":0}).pretty()
 ```
-# This will show vlaue field
+# This Will Show Value Field
 ```bash
 db.moves.find({}, {"value":1}).pretty()
 ```
-# This will now show vlaue field but show time field 
+# This Will Now Show Value Field But Show time field 
 ```bash
 db.moves.find({}, {"value":0 , "time":1}).pretty()
 ```
-# show collection 
+# Show Collection 
 ```bash
 db.mobies.find().pretty()
 ```				
-# delete collection
+# Delete Collection
 ```bash
 db.movies.drop()
 ```
-# Count documents
+# Count Documents
 ```bash
 db.movies.count()
 ```
-# Document stats
+# Document Stats
 ```bash
 db.movies.stats()
 ```
-# Selective Delete documents
+# Selective Delete Documents
 ```bash
 db.movies.deleteMany({"value": {$gt: 1000}})
 ```
-# Delete all documents
+# Delete All Documents
 ```bash
 db.movies.deleteMany({})
 ```
